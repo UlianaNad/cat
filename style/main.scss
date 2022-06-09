@@ -1,0 +1,41 @@
+@keyframes catmovesright {
+    from{
+        margin-left: 100px;
+    }
+    to{
+        margin-left: 800px;
+    } 
+}
+.animatecatright{
+    animation: catmovesright 3s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes catmovesleft {
+    from{
+        margin-left: 800px;
+    }
+    to{
+        margin-left: 100px;
+    }
+}
+
+.animatecatleft{
+    animation: catmovesleft  3s ;
+    animation-fill-mode: forwards;
+}
+
+.parent{
+    width: 1200px;
+    height: 600px;
+    background-color: antiquewhite;
+    border: 3px solid #000000;
+    margin: 0 auto;
+    position: relative;
+
+    .child{
+     position: absolute;
+     top:200px;
+     margin-left:100px; 
+    }
+}
